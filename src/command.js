@@ -20,10 +20,11 @@ ctx.font = "bold 18px Arial";
 ctx.fillText(name, 20, 40);
 
 //description
-ctx.fillStyle = "#fff";
-ctx.font = "12px Arial";
-ctx.fillText(desc, 20, 60, 260);
-
+if (desc) {
+  ctx.fillStyle = "#fff";
+  ctx.font = "12px Arial";
+  ctx.fillText(desc, 20, 60, 260);
+}
 // Details
 if (tech) {
   ctx.font = "12px Arial";
